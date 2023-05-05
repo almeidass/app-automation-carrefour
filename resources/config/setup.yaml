@@ -1,0 +1,14 @@
+SETUP:
+  env:
+    default:
+      exec_env: hml
+  appium:
+    default:
+      remote_url: http://localhost:4723/wd/hub
+      timeout: 30s
+      android:
+        automation_name: UIAutomator2
+        platform_name: Android
+      ios:
+        automation_name: XCUITest
+        platform_name: iOS
